@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Мемная визитка Криштиану Роналду" />
+    <title>CR7 — мемная легенда</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="CR7 домой">CR<span>7</span></a>
+      <p class="topline">величие, но с Wi‑Fi</p>
+      <button class="sound-button" id="soundButton" type="button" aria-pressed="false">
+        <span class="sound-icon">♪</span> режим SIIII
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> неофициальная мемная визитка</p>
+          <h1 id="hero-title">Криштиану<br /><em>Роналду</em></h1>
+          <p class="hero-text">Футболист. Машина. Человек, который празднует гол так, будто только что оплатил коммуналку без комиссии.</p>
+          <div class="hero-actions">
+            <a href="#meme" class="button button-primary">погрузиться в вайб <b>↓</b></a>
+            <button class="button button-ghost" id="factButton" type="button">случайный факт</button>
+          </div>
+          <p class="fact" id="fact" aria-live="polite">Нажми «случайный факт». Никакого офсайда, только уважение.</p>
+        </div>
+
+        <div class="hero-art" aria-label="Стилизованный портрет Роналду">
+          <div class="sticker sticker-top">GOAT?<br /><b>SIUUU!</b></div>
+          <div class="sun"></div>
+          <div class="cr7-number">7</div>
+          <div class="player">
+            <div class="head"><span class="hair"></span><span class="face-line"></span></div>
+            <div class="neck"></div>
+            <div class="body"><span class="jersey-number">7</span><span class="arm arm-left"></span><span class="arm arm-right"></span></div>
+            <div class="legs"><span></span><span></span></div>
+          </div>
+          <div class="ground"></div>
+          <div class="bubble bubble-one">не празднует.<br />он объявляет.</div>
+          <div class="bubble bubble-two">98<br /><small>ОВР</small></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Мемная бегущая строка">
+        <div>SIUUU! <i>✦</i> СОБРАЛСЯ <i>✦</i> МЕНТАЛИТЕТ МОНСТРА <i>✦</i> БЕЗ САХАРА <i>✦</i> SIUUU! <i>✦</i> СОБРАЛСЯ <i>✦</i> МЕНТАЛИТЕТ МОНСТРА <i>✦</i> БЕЗ САХАРА <i>✦</i></div>
+      </section>
+
+      <section class="meme-section" id="meme" aria-labelledby="meme-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> досье легенды</p>
+          <h2 id="meme-title">Статистика,<br />которую <em>мы одобряем</em></h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card lime">
+            <span class="stat-emoji">🥤</span>
+            <strong>0</strong><small>любви к газировке<br />на пресс-конференции</small>
+            <p>вода — это стиль</p>
+          </article>
+          <article class="stat-card dark">
+            <span class="stat-emoji">🪞</span>
+            <strong>∞</strong><small>проверок<br />причёски</small>
+            <p>фокус на деталях</p>
+          </article>
+          <article class="stat-card coral">
+            <span class="stat-emoji">📣</span>
+            <strong>SIUUU</strong><small>децибел<br />после гола</small>
+            <p>слышно даже VAR</p>
+          </article>
+          <article class="stat-card paper quote-card">
+            <p class="quote-mark">“</p>
+            <blockquote>Талант без работы — это как гол без празднования.</blockquote>
+            <cite>— наверное, CR7</cite>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-zone" aria-label="Мемная цитата">
+        <p>Когда кто-то говорит<br />«слишком много тренируешься»:</p>
+        <div class="big-siu">SIUUU<span>!</span></div>
+        <button id="siuButton" class="siu-button" type="button">нажми, если тоже легенда</button>
+      </section>
+    </main>
+
+    <footer>
+      <span>© фан-клуб самоиронии, 2024</span>
+      <a href="#top">наверх ↑</a>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
